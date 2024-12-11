@@ -2,12 +2,9 @@
   width: 24px; /*largura*/
   height: 24px; /*altura*/
   background-image: url("../img/Menu.svg"); /*Link da imagem de fundo*/
-  display: inline-block; /*Isso que permite que a altura e a largura sejam configurados*/
   background-repeat: no-repeat;
   background-position: center;
-}
-.container__imagem {
-  padding: 1em;
+  display: inline-block; /*Isso que permite que a altura e a largura sejam configurados*/
 }
 .cabecalho {
   background-color: var(--branco);
@@ -16,11 +13,14 @@
   align-items: center;
   position: relative;
 }
-
 .container {
   display: flex;
   align-items: center;
 }
+.container__imagem {
+  padding: 1em;
+}
+
 .container__imagem {
   padding: 1 em;
 }
