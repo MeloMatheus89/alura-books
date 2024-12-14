@@ -1,7 +1,0 @@
-Esse aqui é o código para fazer botão de LIKE!
-<input type="checkbox" id="like" class="container__botao">
-<label for="like">
-  <img src="https://imgur.com/6nT3eyN.png" alt="Coração">
-</label>
-
-Que coisa incrível!!
