@@ -1,6 +1,8 @@
 .topicos {
   background: var(--azul-degrade);
   text-align: center;
+  padding: 1em 0;
+  margin-bottom: 1em;
 }
 .topicos__titulos {
   color: var(--branco);
@@ -14,6 +16,8 @@
 }
 .topicos__lista__link {
   color: var(--branco);
+  font-size: 14px;
+  font-weight: 700;
   padding: 1em;
   background-color: var(--dourado);
   text-decoration: none;
