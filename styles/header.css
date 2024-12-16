@@ -32,7 +32,7 @@
   width: 60vw;
 }
 .container__botao:checked ~ .lista-menu {
-  /*O que esse camarada está fazendo? O ":" é a pseudoclasse do checkbox para quando ele estiver marcado. Como o padrão é desmarcado não faz sentido colocar para ambas as situações.*/
+  /*O que esses camaradas estão fazendo? O ":" é a pseudoclasse do checkbox para quando ele estiver marcado. Como o padrão é desmarcado não faz sentido colocar para ambas as situações.*/
   /*O caractere "~" é o combinador do CSS. Ele aponta que quando um dos elementos HTML for selecionado, ele irá apontar para o elemento HTML após o ~ sofrer as alterações*/
   display: block;
 }
@@ -62,6 +62,7 @@
   display: none;
 }
 
+/*Início da personalização do layout para tablets*/
 @media screen and (min-width: 1024px) {
   .container__titulo,
   .container__titulo--negrito {
@@ -89,6 +90,15 @@
   /* Ocultando as coisas que eu não quero que apareça quando estiver na resolução tablet*/
   .cabecalho__menu-hamburguer,
   .container__imagem-transparente {
+    display: none;
+  }
+  /*Permite abrir o menu de opcoes de categorias via css*/
+  .opcoes__botao:checked ~ .lista-menu {
+    display: block;
+    width: auto;
+  }
+  /*Oculta o botão de checkbox*/
+  .opcoes__botao {
     display: none;
   }
 }
