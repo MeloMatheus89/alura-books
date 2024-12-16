@@ -31,3 +31,18 @@
   background: url("../img/Pesquisa.svg") no-repeat;
   background-position: 1em;
 }
+
+@media screen and (min-width: 1024px) {
+  /* Início da personalização do Banner*/
+  .banner__titulo {
+    font-size: 36px;
+    font-weight: 700px;
+  }
+
+  .banner__pesquisa {
+    width: 50%;
+  }
+  .banner__pesquisa::placeholder {
+    background-position: 7em;
+  }
+}
