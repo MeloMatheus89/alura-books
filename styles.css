@@ -4,7 +4,7 @@
 @import url("styles/topicos.css");
 @import url("styles/contato.css");
 @import url("styles/footer.css");
-:root  {
+:root {
   --cor-de-fundo: #ebecee;
   --branco: #ffffff;
   --dourado: #eb9b00;
@@ -12,6 +12,7 @@
   --preto: #000000;
   --azul-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
   --fonte-principal: "Poppins";
+  --fonte-secundaria: "Josefin Sans";
 }
 
 body {
