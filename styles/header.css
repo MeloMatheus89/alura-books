@@ -6,6 +6,7 @@
   background-position: center;
   display: inline-block; /*Isso que permite que a altura e a largura sejam configurados*/
 }
+
 .cabecalho {
   background-color: var(--branco);
   display: flex;
@@ -35,6 +36,14 @@
   /*O que esses camaradas estão fazendo? O ":" é a pseudoclasse do checkbox para quando ele estiver marcado. Como o padrão é desmarcado não faz sentido colocar para ambas as situações.*/
   /*O caractere "~" é o combinador do CSS. Ele aponta que quando um dos elementos HTML for selecionado, ele irá apontar para o elemento HTML após o ~ sofrer as alterações*/
   display: block;
+}
+
+.container__botao:checked ~ .container__rotulo > .cabecalho__menu-hamburguer {
+  background-image: url("../img/Menu Aberto.svg");
+}
+
+.container__botao:checked ~ .container__rotulo {
+  background: var(--azul-degrade);
 }
 .lista-menu__item,
 .lista-menu__titulo {
@@ -102,6 +111,22 @@
   /*Oculta o botão de checkbox*/
   .opcoes__botao {
     display: none;
+  }
+
+  .opcoes__botao:checked ~ .opcoes__rotulo > .opcoes__item {
+    background: var(--azul-degrade);
+    color: var(--branco);
+  }
+  .opcoes__item {
+    padding: 2em 1em;
+  }
+
+  .lista-menu__item:hover {
+    background: var(--azul-degrade);
+  }
+  .lista-menu__item:hover > .lista-menu__link {
+    -webkit-text-fill-color: var(--branco);
+    text-decoration: none;
   }
 }
 
