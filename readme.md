@@ -22,7 +22,7 @@ Além disso também tive a oportunidade de testar o SwiperJS que já me apaixone
 
 **Instruções de Uso:**
 
-- Abra o link no VercelApp;
+- Abra o link no VercelApp (https://alura-books-rouge-xi.vercel.app/);
 - Entre no modo de desenvolvedor e ative o modo responsivo;
 - Teste as resoluções de largura de página 428 (smartphones), 1024 (tablet) e 1728 (desktop).
 
